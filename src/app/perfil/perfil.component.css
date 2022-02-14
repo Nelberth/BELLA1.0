@@ -1,0 +1,80 @@
+.todo{
+    display: flex;
+}
+.content{
+    width: 30%;
+    background: #fff;
+    box-shadow: 5px 5px 20px rgba(100,100,100, 0.2);
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    color: rgba(100,100,100, 1);
+    font-weight: 300;
+}
+img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    
+}
+.cuadro_foto{
+    transform: translateY(150px);
+    position: absolute;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+}
+.t_cuenta{
+    margin-top: 120px;
+    margin-bottom: 20px;
+    
+}
+.caracteristicas{
+    width: 100%;
+
+}
+.c{
+    padding: 20px;
+    border-top: 1px solid rgba(100,100,100, 0.4);
+}
+.cc{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+.morado{
+    background: linear-gradient(180deg,  rgba(124, 30, 217, 0.8) 0%, rgba(156,27,191, 0.8) 100%);
+    width: 100%;
+    height: 250px;
+}
+.nombre_c{
+    margin: 20px 0;
+    
+
+}
+.foto_blanco{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    background: #fff;
+}
+.puntaje{
+    font-size: 1.5em;
+    font-weight: 700;
+}
+.estrella{
+    font-size: 1.5em;
+    color: rgb(238, 238, 94);
+}
+.content2{
+    width:calc(70% - 20px);
+    min-height: 500px;
+    background: #fff;
+    box-shadow: 5px 5px 20px rgba(100,100,100, 0.2);
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    color: rgba(100,100,100, 1);
+    margin-left: 20px;
+    font-weight: 300;
+}

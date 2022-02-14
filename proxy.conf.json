@@ -1,0 +1,7 @@
+{
+    "/BELLA1.0/BellaDev1.0/*":{
+        "target": "http://localhost:80/",
+        "secure":false,
+        "logLevel":"debug"
+    }
+}

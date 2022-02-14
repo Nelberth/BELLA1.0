@@ -1,0 +1,139 @@
+
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@use '@angular/material' as mat;
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+
+
+// Now we have sweet buttons with Comic Sans.
+
+@include mat.core();
+
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$md-mcgpalette0: (
+    50 : #f6e9fc,
+    100 : #e9c8f8,
+    200 : #daa4f3,
+    300 : #cb7fee,
+    400 : #bf63ea,
+    500 : #b448e6,
+    600 : #ad41e3,
+    700 : #a438df,
+    800 : #9c30db,
+    900 : #8c21d5,
+    A100 : #ffffff,
+    A200 : #efdaff,
+    A400 : #daa7ff,
+    A700 : #cf8eff,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+$md-mcgpalette1: (
+    50 : #eaf5ea,
+    100 : #c9e7cb,
+    200 : #a6d7a8,
+    300 : #82c785,
+    400 : #67bb6a,
+    500 : #4caf50,
+    600 : #45a849,
+    700 : #3c9f40,
+    800 : #339637,
+    900 : #248627,
+    A100 : #c5ffc7,
+    A200 : #92ff95,
+    A400 : #5fff64,
+    A700 : #46ff4b,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+$md-mcgpalette2: (
+    50 : #fce9ef,
+    100 : #f8c8d7,
+    200 : #f3a4bd,
+    300 : #ee7fa2,
+    400 : #ea638e,
+    500 : #e6487a,
+    600 : #e34172,
+    700 : #df3867,
+    800 : #db305d,
+    900 : #d5214a,
+    A100 : #ffffff,
+    A200 : #ffdae2,
+    A400 : #ffa7b9,
+    A700 : #ff8ea5,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+
+
+$bella-primary: mat.define-palette($md-mcgpalette0);
+$bella-accent: mat.define-palette($md-mcgpalette1);
+
+// The warn palette is optional (defaults to red).
+$bella-warn: mat.define-palette($md-mcgpalette2);
+
+// Create the theme object. A theme consists of configurations for individual
+// theming systems such as "color" or "typography".
+$bella-theme: mat.define-light-theme((
+  color: (
+    primary: $bella-primary,
+    accent: $bella-accent,
+    warn: $bella-warn,
+  )
+));
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include mat.all-component-themes($bella-theme);
+

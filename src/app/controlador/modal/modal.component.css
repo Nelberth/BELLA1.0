@@ -1,0 +1,53 @@
+.modal{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    background: rgba(0,0,0,.3);
+    z-index: 9999999999999;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.modal_cuadro{
+    background: #fff;
+    box-shadow: 0px 0px 20px rgba(0,0,0,.2);
+    border-radius: 5px;
+}
+.arriba{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   border-bottom: 1.67832px solid #EEEEEE;
+   padding: 10px 20px;
+}
+.cerrar{
+    cursor: pointer;
+    color: #F7685B;
+}
+.texto{
+    color: rgba(0,0,0,.5);
+    padding: 20px;
+    font-size: 14px;
+}
+.opcion{
+    display: flex;
+    justify-content: end;
+}
+button{
+    font-size: 12px;
+    padding: 7px 20px;
+    margin: 10px ;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+button i{
+    margin-right: 7px;
+}
+.eliminar{
+    background: #F7685B;
+    color: #fff;
+}

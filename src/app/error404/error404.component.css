@@ -1,0 +1,74 @@
+.contenido{
+    height: 100vh;
+    width: 100vw;
+    background: radial-gradient(circle, rgba(156,27,191, 0.8) 0%,rgba(124, 30, 217, 0.8) 100%);
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+     
+}
+.columna{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+}
+h1{
+    font-size: 6em;
+    color:rgba(255, 255, 255, 1);
+
+}   
+p{
+    font-size: 1.2em;
+    color: rgba(255, 255, 255, 0.7);
+
+}
+button{
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: 100ms all linear;
+}
+button:hover{
+    background: white;
+    color: rgba(124, 30, 217, 0.8);
+
+}
+.redes{
+    margin-top: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 20px;
+   align-self: center;
+   z-index: 50;
+}
+.cuadro_redes{
+   margin: 0px 5px;
+   font-size: 1.5em;
+   padding: 10px;
+}
+a{
+    color: rgba(0, 0, 0, .4);
+
+}
+
+.footer{
+    position: absolute;
+    width: 100vw;
+    bottom: 0;
+    padding:15px 30px;
+    font-weight: 300;
+    color:rgba(200,200,200, 1);
+    display: flex;
+    justify-content: space-between;
+    font-size: .8em;
+    text-align: center;
+    
+}
+

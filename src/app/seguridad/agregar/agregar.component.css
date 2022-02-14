@@ -1,0 +1,116 @@
+.lista_todo{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-flow: column;
+}
+.titulo{
+    font-size: 32px;
+    color: #000;
+    font-weight: 500 !important;
+    margin-bottom: 40px;
+}
+.cajita{
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.campo{
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    padding:0 20px;
+}
+
+ label{
+    font-size: 14px;
+    color: #808192;
+    margin-bottom: 10px;
+}
+ input, select{
+   width: 100%;
+   padding: 18px;
+   background: none;
+   border: none;
+    outline: none;
+    font-size: 16px;
+   
+}
+.inclusion span{
+    margin: 0 15px 0 20px;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+}
+.inclusion{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    background:  #F8F8F9;  
+    font-weight: 500;
+    width: 100%; 
+    overflow: hidden;
+    border:2px solid #F8F8F9 ;
+    transition: all linear 100ms;
+}
+
+.inclusion:hover{
+    background: rgba(255, 255, 255, 0.1);
+    border:2px solid #B348E6 ;
+}
+.guardar{
+    display: flex;
+    justify-content: end;
+}
+.guardar button{
+    background: #B348E6;
+    color: #FFF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+   margin-right: 20px;
+   cursor: pointer;
+   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+i{
+    margin-right: 5px;
+}
+input.error, select.error, input.erro {
+    color: rgba(233, 29,98,1) ;
+}
+label.inclusion.error,label.inclusion.erro {
+    border:2px solid rgba(233, 29,98,1) ; 
+    background: rgba(233, 29,98, 0.1);
+}
+.error::placeholder,.erro::placeholder{
+    color: rgba(233, 29,98,1) ;
+}
+label.error,label.erro{
+    color: rgba(233, 29,98,1) ;   
+}
+.d{
+    -webkit-text-security: disc;
+}
+input.positivo{  
+    color:rgba(91, 198, 91,1);
+}
+label.inclusion.positivo{
+    border:2px solid rgba(91, 198, 91,1); 
+    background: rgba(91, 198, 91,.1);
+}
+label.positivo{
+    color: rgba(91, 198, 91,1);  
+}
+.mensaje{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.8em;
+}
+.verde{
+    color: rgba(91, 198, 91,1);  
+}
+.rojo{
+    color: rgba(233, 29,98,1) ; 
+}

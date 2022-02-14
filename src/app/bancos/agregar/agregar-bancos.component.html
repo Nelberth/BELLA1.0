@@ -1,0 +1,42 @@
+<div class="lista_todo">
+    <div class="titulo animate__animated animate__fadeInDown">Agregar un nuevo banco</div>
+
+    
+    <div class="cajita" id="cajita">
+        <div class="campo  animate__animated animate__fadeIn">
+            <label for="nombre_banco">Nombre del banco</label>
+            <label for="nombre_banco"  class="inclusion">
+                <input autocomplete="off"   id="nombre_banco" type="text" placeholder="Introdusca el nombre del banco..." [(ngModel)]="nombre_banco" (keyup)="solo_error($event)">
+                <span><i class="fas fa-landmark"></i></span>
+            </label>
+        </div>
+        <div class="campo  animate__animated animate__fadeIn">
+            <label for="numero_banco">N° del banco</label>
+            <label for="numero_banco"  class="inclusion">
+                <input autocomplete="off"   id="numero_banco" type="text" placeholder="Introdusca el numero del banco..." [(ngModel)]="numero_banco" (keyup)="solo_error($event)">
+                <span><i class="fas fa-donate"></i></span>
+            </label>
+        </div>
+        <div class="campo  animate__animated animate__fadeIn">
+            <label for="dinero_banco">Dinero en el banco</label>
+            <label for="dinero_banco"  class="inclusion">
+                <input autocomplete="off"   id="dinero_banco" type="text" placeholder="Introdusca el dinero actual del banco..." [(ngModel)]="dinero_banco" (keyup)="solo_error($event)">
+                <span><i class="fas fa-piggy-bank"></i></span>
+            </label>
+        </div>
+        <div class="campo animate__animated animate__fadeIn">
+            <label for="id_moneda">Moneda</label>
+            <label for="id_moneda" class="inclusion">
+            <select id="id_moneda" [(ngModel)]="id_moneda"  (change)="solo_error($event)">
+                <option value="">Selecione el tipo de moneda</option>
+                <option value="1">Colon costarricense</option>
+                <option value="2">Dolar estadounidense</option>
+              </select>
+              <span><i class="far fa-money-bill-alt"></i></span>
+            </label>
+
+        </div>
+        
+    </div>
+    <div class="guardar animate__animated animate__bounceInUp"><button (click)="agregarBanco()"> <i class="fas fa-user-plus"></i> Añadir banco</button></div>
+</div>

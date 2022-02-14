@@ -1,0 +1,106 @@
+.lista{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    margin-bottom: 10px;
+}
+.lista_tabla{
+    display: flex;
+    justify-content: center;
+}
+.titulo_usuarios{
+    font-size: 32px;
+    color: #000;
+    font-weight: 500 !important;
+}
+.lista_header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lista_header li{
+    list-style: none;
+    margin-right: 10px;
+    width: 58px;
+    height: 58px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    transition: 100ms all linear;
+  
+
+}
+.lista_header li:hover{
+    background: #F3F1FE;
+    color: #B348E6;
+}
+.buscador{
+    width: 400px;
+    display: flex;
+    border: 1px solid #EFF0F6;
+    border-radius: 8px;
+    padding: 8px 20px;
+    color: #D6D7E3;
+    display: flex;
+    justify-content: space-between;
+}
+.buscador input{
+    border: none;
+    outline: none;
+    background: none;
+    margin-right: 20px;
+}
+div.estado{
+    margin: 0 auto;
+    display: flex;
+    width: 15px !important;
+    height: 15px !important;
+    border-radius: 50%;
+    background: #F7685B;
+    cursor: pointer;
+}
+div.estado.activo{
+    background: #5bc65b !important;
+}
+select{
+    padding: 10px;
+    border: none;
+    color: #767676;
+    font-size: 1em;
+    outline: none;
+    border-radius: 5px;
+    background: none;
+}
+option{
+    padding: 10px;
+}
+td input{
+    font-size: 1em;
+    color: #767676;
+    border: none;
+    outline: none;
+    background: none;
+    text-align: center;
+
+}
+.nadie{
+    width: 100%;
+    min-height:700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    color: #767676;
+}
+.nadie span{
+    margin: 0px 20px;
+    font-size: 1.5em;
+}
+.d{
+   
+    -webkit-text-security: disc;
+   
+}

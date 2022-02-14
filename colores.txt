@@ -1,0 +1,14 @@
+Paleta de colores
+
+color1: rgba(73,163,242, 0.8);
+color2: rgba(7,86,242, 0.8);
+color3: rgba(156,27,191, 0.8);
+color4: rgba(124, 30, 217, 0.8);
+
+Botones: rgba(124, 30, 217, 0.8);
+
+titulos: rgba(100,100,100, 1);
+
+Texto: rgba(100,100,100, 0.8);
+
+borders: rgba(100,100,100, 0.4);

@@ -1,0 +1,96 @@
+.pantalla{
+    font-weight: 300;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle, rgba(73,163,242, 1) 0%,rgba(7,86,242, 1) 100%);
+    position:relative;
+    z-index: 99;
+}
+.cuadro_login{
+    width: 1000px;
+    height: 600px;
+    background: #fff;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+}
+.presentacion{
+    background:#ffffff;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    width: 200px;
+    margin-bottom: 20px;
+}
+.pre_titulo{
+    color: rgba(100,100,100, 0.8);
+    font-size: 0.8em;
+}
+.login{
+    position: relative;
+   background: linear-gradient(180deg, rgba(156,27,191, 0.8) 0%, rgba(124, 30, 217, 0.8) 50%, rgba(124, 30, 217, 0.8) 100%);
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: stretch;
+}
+.cuadro_registro{
+    display: flex;
+    justify-content: end;
+    padding: 20px;
+    font-size: 13px;
+    
+}
+.registro{
+    margin-top: 10px;
+    margin-left: 10px;
+    background: none;
+    border:1px solid rgba(255,255,255,0.5);
+    padding: 5px 10px;
+    cursor:pointer;
+    border-radius: 5px;
+    transition: all 100ms linear;
+    color: rgba(255,255,255,0.5);
+}
+.registro:hover{
+    background: #fff;
+    color:  rgba(124, 30, 217, 0.8);
+}
+.redes{
+     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    bottom: 0;
+    align-self: center;
+    z-index: 50;
+}
+.cuadro_redes{
+    margin: 0px 5px;
+    font-size: 22px;
+    color: rgba(0,0,0,0.7);
+    padding: 10px;
+}
+.cuadro_panel{
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: start;
+}
+.cuadro_panel h3{
+    color: rgba(255,255,255,0.9);
+    font-size:1.9em;
+    margin-top: 20px;
+    font-weight: 400;
+}

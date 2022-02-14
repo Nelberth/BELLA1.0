@@ -1,0 +1,74 @@
+table{
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0,0.05);
+
+}
+tbody tr{
+    height: 80px;
+    border-bottom: 1.67832px solid #EEEEEE;
+    color: #767676;
+    text-align: center;
+    
+}
+th i{
+    margin-right: 10px;
+}
+td{
+    outline: none;
+    text-align: center;
+
+}
+tbody tr:hover{
+    background: #F3F1FE;
+}
+tbody tr:hover ~ input{
+    background: #F3F1FE;
+}
+tr span{
+    color: #F7685B;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+thead th{
+    text-align: center;
+    color: #fff;
+    background: #B348E6;
+    height: 60px  !important;
+    font-weight: 600 !important;
+}
+.lista_footer{
+    display: flex;
+    justify-content: end;
+}
+.paginacion{
+    display: flex;
+    margin: 30px 10px;
+}
+.paginacion div{
+    margin-right: 10px;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.flecha{
+    color: #D6D7E3;
+    background: #EFF0F6;
+
+}
+.activado{
+    background: #B348E6 !important;
+    color: #fff !important;
+}
+.numero{
+    transition: 100ms linear all;
+}
+.numero:hover{
+    background: #EFF0F6;
+}

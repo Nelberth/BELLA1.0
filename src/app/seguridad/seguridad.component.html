@@ -1,0 +1,68 @@
+<section id="seguridad">
+    <div class="usuarios">
+        <div class="lista">
+
+            <div class="titulo_usuarios">
+                <div class="titulo animate__animated animate__fadeInDown">Gestion de usuarios</div>
+            </div>
+
+            <div class="lista_header">
+                
+                        <li [routerLink]="['./agregar']" class="animate__animated animate__fadeInLeft"><span class="fas fa-plus"></span></li>
+    
+                <div class="buscador animate__animated animate__fadeInRight">
+                    <input type="text" name="" id="" class="buscar" placeholder="Buscar..." [(ngModel)]="buscar" (keyup)="buscarUsuario()"> 
+                    <div class="icono_buscador"><i class="fas fa-search"></i></div>
+                </div>
+            </div>
+        </div>
+
+            <div class="lista_tabla" *ngIf="alguien; else nohaynadie">
+
+                <table class="animate__animated animate__fadeIn animate__fast">
+                    <thead>
+                        <tr>
+                            <th><i class="fas fa-cogs"></i>Estado</th>
+                            <th><i class="fas fa-user"></i>Usuario</th>
+                            <th><i class="fas fa-lock"></i>Contraseña</th>
+                            <th><i class="fas fa-street-view"></i>Rol</th>
+                            <th><i class="fas fa-trash"></i>Eliminar</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cambio" >
+                        <tr *ngFor="let post of usuarios " >
+                            <td> <div class="estado" [ngClass]="{activo:post.estado}" ></div></td>
+                            <td> <input  type="text" value={{post.user}} (change)="actualizarUsuario(post.id,'user',$event)"></td>
+                            <td> <input class="d" type="text" value={{post.password}} (change)="actualizarUsuario(post.id,'password',$event)"></td>
+                            <td><select name="select" value={{post.rol}}  (change)="actualizarUsuario(post.id,'rol',$event)">
+                                <option value="1">Administrador</option>
+                                <option value="2">Moderador</option>
+                                <option value="3">Creador de contenido</option>
+                              </select></td>
+                            <td><span (click)="abrirModal(post.id)"><i class="fas fa-times borrar"></i></span></td>
+                        </tr>                       
+                    </tbody>
+                 
+                </table>
+               
+
+            </div>
+            <ng-template #nohaynadie>
+                <div class="nadie animate__animated animate__fadeIn animate__fast">
+                    <span><i class="fas fa-users-slash"></i></span> No Hay usuarios con el nombre de "{{buscar}}" </div>
+            </ng-template>
+
+            <div class="lista_footer animate__animated animate__fadeInUp  animate__fast">
+               
+                <div class="paginacion" *ngIf="alguien" >
+                    <div class="flecha" [ngClass]="{activado: atras}" (click)="ir_atras()"><i class="fas fa-arrow-left"></i></div>
+                    <div class="numero" *ngFor="let numero of numeros" (click)="setEmpezar(numero)" [ngClass]="{activado: empezar==numero}">
+                        <span  >{{numero}}</span>                            
+
+                    </div>
+                    <div [ngClass]="{activado: adelante}" class="flecha" (click)="ir_adelante()"><i class="fas fa-arrow-right"></i></div>
+                </div>
+            </div>
+        
+    </div>
+</section>

@@ -1,0 +1,138 @@
+<div *ngIf="imodal">
+    <app-modal></app-modal>
+</div>
+<div class="arriba">
+    <div class="header">
+        <div class="logo">
+            <img src="./assets/logo.png">
+        </div>
+
+        <div class="barra">
+            <ul id="monitoreo">
+                <li class="activado" [routerLink]="['./dashboard']">
+                    Inicio
+                </li>
+                <li [routerLink]="['./usuarios']" >
+                    Usuarios
+                </li>
+                <li class="despegable ">
+                    Contabilidad
+                    <div class="abajo">
+                        <i class="fas fa-angle-down"></i>
+                    </div>
+                    <div class="menu_despegable">
+                        <li>Opcion 1</li>
+                        <li>Opcion 2</li>
+                        <li>Opcion 3</li>
+                        <li>Opcion 1</li>
+                        <li>Opcion 2</li>
+                        <li>Opcion 3</li>
+                        <li>Opcion 1</li>
+                        <li>Opcion 2</li>
+                        <li>Opcion 3</li>
+                    </div>
+                </li>
+
+                <li class="despegable">Inventario</li>
+                <li class="despegable">
+                    Cuentas
+                    <div class="abajo">
+                        <i class="fas fa-angle-down"></i>
+                    </div>
+                    <div class="menu_despegable">
+                        <li>Cuentas por cobrar</li>
+                        <li>Cuentas por pagar</li>
+                    </div>
+                </li>
+                <li [routerLink]="['./bancos']">Bancos
+                    
+                </li>
+
+                <li [routerLink]="['']">Ventas</li>
+                <li [routerLink]="['./compras']">Compras</li>
+
+            </ul>
+
+        </div>
+
+        <div class="perfi_todo">
+            <div class="usuario">
+                <div class="cuadro_imagen_perfil">
+                    <div class="rayita_imagen_perfil">
+                        <img src="./assets/face.jpg">
+                    </div>
+                </div>
+                <div class="nombre">
+                    <div class="usuario_nombre">
+                        {{nombre_perfil}}
+                    </div>
+                    <div class="tipo_cuenta">
+                        Administrador
+                    </div>
+                </div>
+                <div class="abajo">
+                    <i class="fas fa-angle-down"></i>
+                </div>
+            </div>
+            <div class="opciones_usuario">
+                <div class="opciones_usu">
+                    <div>
+                        Claro
+                    </div>
+                    <button class="modo" id="modo">
+                        <span>
+                            <i class="fas fa-sun"></i>
+                        </span>
+                        <span>
+                            <i class="fas fa-moon"></i>
+                        </span>
+                    </button>
+                </div>
+                <div class="opciones_usu" [routerLink]="['perfil']">
+                    <div class="icono">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    Ver perfil
+                </div>
+                <div class="opciones_usu">
+                    <div class="icono">
+                        <i class="fas fa-cog"></i>
+                    </div>
+                    Configuracion
+                </div>
+                <div class="opciones_usu" (click)="cerrar_session()">
+                    <div class="icono">
+                        <i class="fas fa-sign-out-alt"></i>
+                    </div>
+                    Salir
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="con">
+    <div class="spiner" *ngIf="spiner">
+        <div class="loader">
+            <div class="face">
+              <div class="circle"></div>
+            </div>
+            <div class="face">
+              <div class="circle"></div>
+            </div>
+          </div>
+    </div>
+    <div class="contenedor">
+        <div class="direccion">
+            <div class="inicio">Inicio</div>
+            <div class="slap">/</div>
+            <div class="actualmente">{{pagina}}</div>
+        </div>
+        <router-outlet ></router-outlet>        
+    </div>
+</div> 
+
+<div class="footer">
+    <div class="derechos">© 2022 BELLA All rights reserved.</div>
+    <div class="diseno">Design and developed by Prisma Hexagon</div>
+</div>

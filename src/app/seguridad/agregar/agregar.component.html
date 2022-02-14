@@ -1,0 +1,45 @@
+<div class="lista_todo">
+    <div class="titulo animate__animated animate__fadeInDown">Agregar nuevo usuario</div>
+
+    
+    <div class="cajita" id="cajita">
+        <div class="campo  animate__animated animate__fadeIn">
+            <label [ngClass]="{'positivo': disponible==1, 'erro': disponible==0 || disponible==4 }" for="usuario">Nombre de usuario</label>
+            <label class="inclusion" for="usuario" [ngClass]="{'positivo': disponible==1, 'erro': disponible==0 || disponible==4 }">
+                <input autocomplete="off" [ngClass]="{'positivo': disponible==1, 'erro': disponible==0 || disponible==4 }" type="text" id="usuario" placeholder="Nombre de usuario..." [(ngModel)]="usuario" (change)="disponibilidad()">
+                <span><i class="fas fa-user"></i></span>
+            </label>
+            <div class="mensaje animate__animated animate__fadeIn" *ngIf="disponible==0">
+                <p class="rojo"> <i class="fas fa-ban"></i>Nombre de usuario no disponible</p>
+            </div>
+            <div class="mensaje animate__animated animate__fadeIn" *ngIf="disponible==1">
+                <p class="verde"><i class="fas fa-check"></i>Nombre de usuario disponible</p>
+            </div>
+            <div class="mensaje animate__animated animate__fadeIn" *ngIf="disponible==3">
+                <p><i class="fas fa-spinner"></i>Verificando nombre...</p>
+            </div>
+        </div>
+        <div class="campo  animate__animated animate__fadeIn">
+            <label for="password">Contraseña</label>
+            <label for="password"  class="inclusion">
+                <input autocomplete="off"  class="d" id="password" type="text" placeholder="Introdusca su contraseña..." [(ngModel)]="password" (keyup)="solo_error($event)">
+                <span><i class="fas fa-unlock-alt"></i></span>
+            </label>
+        </div>
+        <div class="campo animate__animated animate__fadeIn">
+            <label for="rol">Rol</label>
+            <label for="rol" class="inclusion">
+            <select id="rol" [(ngModel)]="rol"  (change)="solo_error($event)">
+                <option value="">Selecione el rol</option>
+                <option value="1">Administrador</option>
+                <option value="2">Moderador</option>
+                <option value="3">Creador de contenido</option>
+              </select>
+              <span><i class="fas fa-street-view"></i></span>
+            </label>
+
+        </div>
+        
+    </div>
+    <div class="guardar animate__animated animate__bounceInUp"><button (click)="agregarUsuario()"> <i class="fas fa-user-plus"></i> Añadir usuario</button></div>
+</div>

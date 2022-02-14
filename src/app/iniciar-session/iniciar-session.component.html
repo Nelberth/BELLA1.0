@@ -1,0 +1,26 @@
+<div class="cuadro_registro">
+    <button class="registro" [routerLink]="['../registro']">Registrarse</button>
+    <button class="registro">Notas v1.0</button>
+</div> 
+<div class="cuadro_panel">
+    <h3>Bienvenido a Bella v1.0</h3>
+   
+<div class="contenido"><div class="titulo">Inicio de Sesion</div>
+<div class="form" id="form" >
+
+    <div class="grupo">
+        <input type="text" name="usuario" autocomplete="off" (blur)="agregarLabel($event)" (focus)="agregarLabel($event)" [(ngModel)]="usuario">
+        <label for="usuario" >Usuario</label>
+    </div>
+    <div class="grupo">
+        <input type="password" name="password" autocomplete="off"(blur)="agregarLabel($event)" (focus)="agregarLabel($event)" [(ngModel)]="password">
+
+        <label for="passsword">Contraseña</label>
+    </div>
+    <div class="grupo">
+        <button (click)="enviar()"> Iniciar Sesion</button>
+       <div class="xd"> <p>Aun no tienes una cuenta? Registrate pulsando <a [routerLink]="['../registro']">click aqui</a></p></div>
+    </div>
+</div>
+</div>
+</div>

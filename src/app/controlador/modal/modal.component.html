@@ -1,0 +1,13 @@
+<div class="modal  animate__animated animate__fadeIn">
+    <div class="modal_cuadro animate__animated animate__fadeInDown">
+        <div class="arriba">
+            <div class="titulo">Eliminar {{nombreModal}}</div>
+            <div class="cerrar" (click)="closeModal()"><i class="fas fa-times borrar"></i></div>
+        </div>
+        <div class="texto ">Esta seguro que desea eliminar este {{nombreModal}}?</div>
+        <div class="opcion">
+            <button class="eliminar" (click)="eliminar()"><i class="fas fa-trash"></i> Eliminar</button>
+            <button (click)="closeModal()">Cancelar</button>
+        </div>
+    </div>
+</div>

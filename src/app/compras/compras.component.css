@@ -1,0 +1,12 @@
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+.s0{
+    width: 70%;
+}
+table{
+    width: 100%;
+}
