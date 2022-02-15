@@ -1,0 +1,84 @@
+#industrias__almacenes{
+    
+    border-top: 2px solid rgba(156,27,191, 0.5);
+    padding: 0 20px;
+}
+#industrias__almacenes .ia__lista{
+    padding: 50px 0;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#industrias__almacenes .ia__lista .item{
+    position: relative;
+    padding: 30px 20px;
+    margin: 10px 20px;
+    border: 1px solid rgba(100,100,100, 0.3);
+    word-break: break-all;
+    width: 250px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    text-align: center;
+    cursor: pointer;
+    transition: all ease .1s;
+}
+#industrias__almacenes .ia__lista .item:hover{
+    border: 1px solid rgba(100,100,100, 0.3);
+    -webkit-box-shadow: 5px 5px 20px 5px rgba(100,100,100,.1);
+    box-shadow: 5px 5px 20px 5px rgba(100,100,100,.1);
+}
+
+#industrias__almacenes .ia__lista .item:hover .opciones{
+    display: flex;
+}
+
+#industrias__almacenes .ia__lista .item .opciones{
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+   
+}
+#industrias__almacenes .ia__lista .item .opciones button{
+    transition: all ease .2s;
+    cursor: pointer;
+    padding: 5px 10px;
+    border: none;
+    font-size: 14px;
+    /* color: rgba(0,0,0, 0.6); */
+}
+
+
+.eliminar{
+    color:#ea638e;
+}
+.eliminar:hover{
+    background: #ea638e;
+    color: #fff;
+}
+
+.editar{
+    color: #e19e40;
+}
+.editar:hover{
+    background: #e19e40;
+    color: #fff;
+}
+
+.fa-edit{
+    margin-left: 5px;
+}
+
+
+
+#industrias__almacenes .ia__lista .item .icono {padding-top: 20px; color: rgba(100,100,100, 0.6);font-size: 50px;margin-bottom: 20px;}
+#industrias__almacenes .ia__lista .item .nombre{color: rgba(100,100,100, 1);font-size: 24px; font-weight: 500;padding: 10px 0;}
+#industrias__almacenes .ia__lista .item .direccion{color: rgba(100,100,100, 0.8);font-size: 12px;}
+

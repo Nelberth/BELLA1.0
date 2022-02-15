@@ -5,9 +5,11 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatTableModule} from '@angular/material/table';
-
-
-
+import {MatDialogModule} from '@angular/material/dialog';
+import {MatInputModule} from '@angular/material/input';
+import {MatListModule} from '@angular/material/list';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatSelectModule} from '@angular/material/select';
 
 @NgModule({
   declarations: [],
@@ -19,7 +21,12 @@ import {MatTableModule} from '@angular/material/table';
     MatIconModule,
     MatDividerModule,
     MatGridListModule,
-    MatTableModule
+    MatTableModule,
+    MatDialogModule,
+    MatInputModule,
+    MatListModule,
+    MatFormFieldModule,
+    MatSelectModule
   ]
 })
 export class MaterialModule { }

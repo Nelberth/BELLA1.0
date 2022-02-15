@@ -1,0 +1,44 @@
+.modal__agregar__almacen{
+    /* background-color: #000; */
+    width: 800px;
+    height: 300px;
+}
+.modal__titulo{
+
+}
+.titulo__opciones{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.titulo__opciones h1{
+    margin-bottom: 0px;
+}
+.titulo__opciones button{
+    background: none;
+    border: none;
+    /* padding: 20px; */
+    font-weight: bold;
+    color: #F7685B;
+    font-size: 20px;
+    cursor: pointer;
+}
+.modal__contenido form{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.formulario__grupo__mitad{
+    margin-top: 20px;
+    padding: 10px 0;
+    width:50%;
+}
+.formulario__grupo__full{
+    width:100%;
+}
+.contenedor__input{
+    padding: 10px;
+    width: 100%;
+}

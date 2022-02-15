@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
-
 import { AppComponent } from './app.component';
 import { ControladorComponent } from './controlador/controlador.component';
 import { LoginComponent } from './login/login.component';
@@ -26,6 +25,11 @@ import { PerfilComponent } from './perfil/perfil.component';
 import { ComprasComponent } from './compras/compras.component';
 import { MaterialModule } from './material.module';
 
+
+import { InventarioComponent } from './inventario/inventario.component';
+import { ModalAlmacenComponent } from './inventario/modal-almacen/modal-almacen.component';
+
+
 const rutas:Routes=[
   {path:'',component:ControladorComponent,
     children:[
@@ -38,6 +42,8 @@ const rutas:Routes=[
       {path:'bancos/agregar', component:AgregarBancosComponent},
       {path:'perfil', component:PerfilComponent},
       {path:'compras', component:ComprasComponent},
+
+      {path:'inventario', component:InventarioComponent},
 
       
   ]  },
@@ -68,9 +74,11 @@ const rutas:Routes=[
     AgregarBancosComponent,
     ModalComponent,
     PerfilComponent,
-    ComprasComponent
-    
+    ComprasComponent,
+    InventarioComponent,
+    ModalAlmacenComponent,
   ],
+
   imports: [
     BrowserModule,
     FormsModule,
