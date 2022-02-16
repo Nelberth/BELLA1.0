@@ -8,7 +8,7 @@
 
             <div class="lista_header">
                 
-                        <li  class="animate__animated animate__fadeInLeft" mat-button (click)="openDialog()"><span class="fas fa-plus"></span></li>
+                        <li  class="animate__animated animate__fadeInLeft" mat-button (click)="agregarAlmacen()"><span class="fas fa-plus"></span></li>
     
                 <div class="buscador animate__animated animate__fadeInRight">
                     <input type="text" name="" id="" class="buscar" placeholder="Buscar..."> 
@@ -17,15 +17,15 @@
             </div>
         </div>
 
-
+        
         <div id="industrias__almacenes">
             <div class="ia__lista">
                 
                 <div class="item animate__animated animate__fadeIn animate__fast">
                     
                     <div class="opciones">
-                        <button class="editar">Editar<i class=" fas fa-edit"></i></button>
-                        <button class="eliminar"><i class="fas fa-trash"></i></button>
+                        <button class="editar" (click)="actualizarAlmacen()">Editar<i class=" fas fa-edit"></i></button>
+                        <button class="eliminar" (click)="eliminarAlmacen()"><i class="fas fa-trash"></i></button>
                     </div>
 
                     <div class="icono">

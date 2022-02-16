@@ -28,6 +28,8 @@ import { MaterialModule } from './material.module';
 
 import { InventarioComponent } from './inventario/inventario.component';
 import { ModalAlmacenComponent } from './inventario/modal-almacen/modal-almacen.component';
+import { ModalAlmacenEliminarComponent } from './inventario/modal-almacen-eliminar/modal-almacen-eliminar.component';
+import { ModalAlmacenActualizarComponent } from './inventario/modal-almacen-actualizar/modal-almacen-actualizar.component';
 
 
 const rutas:Routes=[
@@ -77,6 +79,8 @@ const rutas:Routes=[
     ComprasComponent,
     InventarioComponent,
     ModalAlmacenComponent,
+    ModalAlmacenEliminarComponent,
+    ModalAlmacenActualizarComponent,
   ],
 
   imports: [

@@ -15,7 +15,6 @@ body::-webkit-scrollbar-thumb{
 }
 body.dark::-webkit-scrollbar{
     background: rgba(100,100,100, 1);
-
     width: 7px;
 }
 body.dark::-webkit-scrollbar-thumb{
