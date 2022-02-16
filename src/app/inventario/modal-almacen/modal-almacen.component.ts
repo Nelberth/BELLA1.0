@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input} from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import {FormBuilder, FormControl, FormGroup, FormGroupDirective, NgForm, Validators} from '@angular/forms';
 import {ErrorStateMatcher} from '@angular/material/core';
@@ -10,18 +10,21 @@ import { Tipo } from './interfaces/modal-almacenes.interfaces';
   styleUrls: ['./modal-almacen.component.css']
 })
 export class ModalAlmacenComponent implements OnInit {
+  @Input() data:any;
   nombre = '';
   direccion = '';
   tipo = '';
   nombrevalidator = new FormControl('', [Validators.required, ]);
   direccionValidator = new FormControl('', [Validators.required, ]);
-  selectFormControl = new FormControl('', [Validators.required, Validators.email]);
+  selectFormControl = new FormControl('', [Validators.required,]);
   optionControl = new FormControl('', Validators.required);
   matcher = new ErrorStateMatcher();
+
   tipoEstablecimiento: Tipo[] = [
-    {nombre: 'Almacen'},
-    {nombre: 'Industria'},
+    {tipo: 'Almacen'},
+    {tipo: 'Industria'},
   ];
+
   formulario:FormGroup;
   
   
@@ -32,10 +35,9 @@ export class ModalAlmacenComponent implements OnInit {
       direccion:['',Validators.required],
       tipo:['',Validators.required],
     })
-
   }
 
-  activar(){
+  activar(): void{
     console.log(this.formulario)
   }
 

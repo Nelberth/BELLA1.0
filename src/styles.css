@@ -59,3 +59,6 @@ body.dark .activado:hover{
 } 
 html, body { height: 100%; }
 body { margin: 0; font-family: "Be Vietnam Pro", "Helvetica Neue", sans-serif; }
+.mat-form-field-appearance-fill .mat-form-field-flex{
+    background: none;
+ }
