@@ -1,0 +1,72 @@
+.modal__agregar__almacen{
+    /* background-color: #000; */
+    width: 800px;
+    height: auto;
+    overflow: hidden;
+}
+.modal__titulo{
+
+}
+.titulo__icono{
+    display: flex;
+    align-items: center;
+}
+.icono__titulo{
+    margin-right: 10px;
+    font-size: 25px;
+    color:  rgba(100,100,100, 0.8);
+}
+.titulo__opciones{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.titulo__opciones h1{
+    margin-bottom: 0px;
+}
+.titulo__opciones button{
+    background: none;
+    border: none;
+    font-weight: bold;
+    color: rgba(100,100,100, 0.8);
+    font-size: 20px;
+    cursor: pointer;
+}
+.modal__contenido form{
+    
+}
+.modal__formulario__cuerpo{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.formulario__grupo__mitad{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    /* padding: 10px 0; */
+    width:50%;
+}
+.icono__input {
+    /* font-size: 20px; */
+}
+.icono__input .material-icons-outlined{
+    font-size: 25px;
+    color:  rgba(100,100,100, 0.8);
+}
+.formulario__grupo__full{
+    display: flex;
+    align-items: center;
+    /* margin-top: 20px; */
+    width:100%;
+}
+.contenedor__input{
+    padding: 10px;
+    width: 100%;
+}
+.mat-dialog-actions button {
+    /* background: #000; */
+}

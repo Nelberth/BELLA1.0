@@ -25,12 +25,19 @@ import { PerfilComponent } from './perfil/perfil.component';
 import { ComprasComponent } from './compras/compras.component';
 import { MaterialModule } from './material.module';
 
-
+// inicio vista de almacenes con modales
 import { InventarioComponent } from './inventario/inventario.component';
 import { ModalAlmacenComponent } from './inventario/modal-almacen/modal-almacen.component';
 import { ModalAlmacenEliminarComponent } from './inventario/modal-almacen-eliminar/modal-almacen-eliminar.component';
 import { ModalAlmacenActualizarComponent } from './inventario/modal-almacen-actualizar/modal-almacen-actualizar.component';
+// fin vista de almacenes con modales
 
+// inicio vista de productos dentro de almacenes e industrias
+import { AlmacenIndustriaComponent } from './inventario/almacen-industria/almacen-industria.component';
+import { ModalProductoComponent } from './inventario/almacen-industria/modal-producto/modal-producto.component';
+import { ModalProductoActualizarComponent } from './inventario/almacen-industria/modal-producto-actualizar/modal-producto-actualizar.component';
+import { ModalProductoEliminarComponent } from './inventario/almacen-industria/modal-producto-eliminar/modal-producto-eliminar.component';
+// fin vista de productos dentro de almacenes e industrias
 
 const rutas:Routes=[
   {path:'',component:ControladorComponent,
@@ -46,6 +53,7 @@ const rutas:Routes=[
       {path:'compras', component:ComprasComponent},
 
       {path:'inventario', component:InventarioComponent},
+      {path:'inventario/almacenes-industrias', component:AlmacenIndustriaComponent},
 
       
   ]  },
@@ -81,6 +89,10 @@ const rutas:Routes=[
     ModalAlmacenComponent,
     ModalAlmacenEliminarComponent,
     ModalAlmacenActualizarComponent,
+    AlmacenIndustriaComponent,
+    ModalProductoComponent,
+    ModalProductoActualizarComponent,
+    ModalProductoEliminarComponent,
   ],
 
   imports: [

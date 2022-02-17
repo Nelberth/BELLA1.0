@@ -1,0 +1,106 @@
+.inventario__almacen__industria{
+
+}
+.inventario__tabla{
+
+    width: 90%;
+    margin:auto;
+    border-radius: 8px;
+}
+.titulo__tabla{
+    margin-top: 50px;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(235, 235, 238,1);
+    /* place-content: center; */
+}
+.titulo__bucador{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.titulo__bucador h1{
+    margin: 0;
+    font-size: 18px;
+    margin: 0 2rem;
+    font-weight: 500;
+}
+.buscador {
+    padding: 5px 12px;
+    background: #fff;
+    min-width: 400px;
+    display: flex;
+    place-content: center flex-start;
+    align-items: center;
+    border-radius: 25px;
+}
+.buscador .icono{
+    /* font-size: 12o; */
+}
+.buscador input{
+    background: none;
+    padding: .75rem 0.50rem;
+    width: 100%;
+    border: none;
+}
+.buscador input:focus{
+    outline: none;
+    background-color: none;
+}
+
+.titulo__opciones{
+margin-right: 2rem;
+}
+.titulo__opciones button{
+    opacity: .8;
+    cursor: pointer;
+    color: #fff;
+    /* background-color: rgba(124, 30, 217, 0.8); */
+    box-shadow: 0 3px 5px -1px #0003, 0 6px 10px #00000024, 0 1px 18px #0000001f;
+}
+.tabla__producto{
+    width: 100%;
+    background-color: #fff;
+    border-collapse: collapse;
+}
+.tabla__producto thead{
+    padding: 15px;
+    text-align: left;
+    /* background: rgba(235, 235, 238,.8); */
+    color: #000;
+    border-bottom: 1px solid rgba(100, 100, 100, 0.301);
+}
+.tabla__producto thead th{
+    padding: 1rem;
+    color: rgba(100,100,100, 0.8);
+    font-weight: normal;
+    text-transform: uppercase;
+}
+.tabla__producto tbody td{
+    padding: .50rem;
+    text-align: left;
+    border-bottom: 1px solid rgba(100, 100, 100, 0.301);
+    max-width: 200px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.tabla__producto tbody tr{
+    z-index: 0;
+    transition: all ease .1s;
+    cursor: pointer;
+}
+.btn__opciones{
+    z-index: 100;
+}
+.tabla__producto tbody tr:hover{
+    background-color: rgba(235, 235, 238,1);
+}
+.tabla__producto tbody td .product__imagen{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
