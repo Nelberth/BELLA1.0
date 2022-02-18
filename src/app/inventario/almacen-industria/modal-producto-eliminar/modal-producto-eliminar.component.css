@@ -1,0 +1,30 @@
+.modal{
+    overflow: hidden;
+    width: 500px;
+}
+.modal__cabecera{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    
+}
+.modal__cabecera .titulo h1{
+    margin-bottom: 0;
+    font-size: 18px;
+}
+.modal__cabecera button{
+    background: none;
+    border: none;
+    font-weight: bold;
+    color: rgba(100,100,100, 0.8);;
+    font-size: 20px;
+    cursor: pointer;
+}
+.modal__cuerpo{
+    margin: 20px 0;
+}
+.modal__cuerpo .texto p{
+    margin: 0;
+    color: rgba(100,100,100, 0.8);
+}

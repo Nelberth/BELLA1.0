@@ -1,20 +1,28 @@
 .inventario__almacen__industria{
 
 }
+.inventario__titulo{
+    padding: 0 20px;
+}
+.inventario__titulo h1{
+    font-size: 32px;
+    font-weight: 500 !important;
+    margin: 0;
+}
 .inventario__tabla{
-
-    width: 90%;
-    margin:auto;
+    width: calc(100% - q40px);
+    margin:0 20px;
     border-radius: 8px;
 }
 .titulo__tabla{
-    margin-top: 50px;
+    margin-top: 20px;
     display: flex;
     padding: 10px;
     justify-content: space-between;
     align-items: center;
     background-color: rgba(235, 235, 238,1);
     /* place-content: center; */
+    /* background: rgba(179, 72, 230,.5); */
 }
 .titulo__bucador{
     align-items: center;
@@ -65,6 +73,7 @@ margin-right: 2rem;
     width: 100%;
     background-color: #fff;
     border-collapse: collapse;
+    margin-bottom: 20px;
 }
 .tabla__producto thead{
     padding: 15px;
@@ -72,6 +81,7 @@ margin-right: 2rem;
     /* background: rgba(235, 235, 238,.8); */
     color: #000;
     border-bottom: 1px solid rgba(100, 100, 100, 0.301);
+    /* border-bottom: 1px solid rgba(179, 72, 230,.5); */
 }
 .tabla__producto thead th{
     padding: 1rem;
@@ -80,22 +90,35 @@ margin-right: 2rem;
     text-transform: uppercase;
 }
 .tabla__producto tbody td{
-    padding: .50rem;
+    padding: 1rem;
     text-align: left;
-    border-bottom: 1px solid rgba(100, 100, 100, 0.301);
+    /* border-bottom: 1px solid rgba(179, 72, 230,.5); */
+    border-bottom: 1px solid #6464644d;
     max-width: 200px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
+}
+.tabla__producto tbody td:last-child, .tabla__producto tbody td:first-child{
+    text-align: center;
 }
 .tabla__producto tbody tr{
     z-index: -1;
     transition: all ease .1s;
     cursor: pointer;
 }
+
 .btn__opciones{
-    /* position: absolute; */
-    z-index: 9999;
+    padding: 10px;
+    border: none;
+    background: none;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: auto;
+    /* color: #e6487a; */
+}
+.btn__opciones .icono{
+    color: #ea638e;
 }
 .tabla__producto tbody tr:hover{
     background-color: rgba(235, 235, 238,1);

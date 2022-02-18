@@ -1,1 +1,22 @@
-<p>modal-producto-eliminar works!</p>
+<mat-dialog-content class="modal mat-typography animate__fadeIn animate__animated" >
+    <div class="modal__cabecera">
+        <div class="titulo">
+            <h1>Estas seguro de eliminar ?</h1>
+        </div>
+        <button [mat-dialog-close]="true">x</button>
+    </div>
+    <mat-divider></mat-divider>
+    <div class="modal__cuerpo">
+        <div class="texto">
+            <p>Estas seguro que deseas eliminar este Almacen?</p>
+        </div>
+    </div>
+    
+    <div class="modal__footer">
+        
+        <mat-dialog-actions align="end" class="botones">
+            <button mat-button [mat-dialog-close]="true">Cancelar</button>
+            <button mat-button cdkFocusInitial color="warn">Eliminar</button>
+        </mat-dialog-actions>
+    </div>
+</mat-dialog-content>

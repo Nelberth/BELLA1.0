@@ -30,6 +30,7 @@
     transition: all ease .1s;
 }
 .item__contenedor{
+    margin: 10px;
     position: relative;
 }
 .item__contenedor .opciones{
