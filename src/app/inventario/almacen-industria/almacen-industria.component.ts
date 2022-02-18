@@ -17,13 +17,28 @@ export class AlmacenIndustriaComponent implements OnInit {
       console.log(`Dialog result: ${result}`);
     });
   }
-  actualizarProducto(){
+  actualizarProducto(e:Event){
+    
+    let a=e.target as Element;
+
+    console.log(a);
     const dialogRef = this.dialog.open(ModalProductoActualizarComponent);
 
     dialogRef.afterClosed().subscribe(result => {
       console.log(`Dialog result: ${result}`);
     });
   }
+
+
+
+
+
+
+
+
+
+
+
   constructor(public dialog: MatDialog) { }
 
   ngOnInit(): void {

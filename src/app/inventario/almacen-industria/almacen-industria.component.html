@@ -33,7 +33,7 @@
             </thead>
             <tbody>
 
-                <tr (click)="actualizarProducto()">
+                <tr (click)="actualizarProducto($event)">
                     <td><img src="./assets/face.jpg" class="product__imagen"></td>
                     <td>Harina Pan</td>
                     <td>Harinas</td>
@@ -41,20 +41,10 @@
                     <td>Bacon ipsum dolor amet sirloin fatback pork belly chicken, short ribs short loin chuck corned beef boudin ham ham hock pork rump doner pork chop. Pork venison bresaola, flank salami tenderloin pork loin chuck boudin andouille leberkas. Jerky bacon hamburger alcatra corned beef. Capicola turkey tenderloin bresaola jerky pig. Spare ribs t-bone short ribs leberkas.</td>
                     <td>3500</td>
                     <td>10000 u</td>
-                    <td class="btn__opciones">
-                        <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
-                            <mat-icon>more_horiz</mat-icon>
-                          </button>
-                          <mat-menu #menu="matMenu">
-                            <button mat-menu-item>
-                              <mat-icon>edit</mat-icon>
-                              <span>Actualizar</span>
-                            </button>
-                            <button mat-menu-item>
-                              <mat-icon>delete</mat-icon>
-                              <span>Eiminar</span>
-                            </button>
-                          </mat-menu>
+                    <td>
+                        <button mat-menu-item class="btn__opciones">
+                            <mat-icon>delete</mat-icon>
+                        </button>
                     </td>
                 </tr>
 

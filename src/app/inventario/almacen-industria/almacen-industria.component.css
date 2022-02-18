@@ -89,12 +89,13 @@ margin-right: 2rem;
     overflow: hidden;
 }
 .tabla__producto tbody tr{
-    z-index: 0;
+    z-index: -1;
     transition: all ease .1s;
     cursor: pointer;
 }
 .btn__opciones{
-    z-index: 100;
+    /* position: absolute; */
+    z-index: 9999;
 }
 .tabla__producto tbody tr:hover{
     background-color: rgba(235, 235, 238,1);
